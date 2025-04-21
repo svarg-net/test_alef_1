@@ -1,0 +1,10 @@
+services:
+  php: 
+    build:  .
+    working_dir: /app
+    volumes: 
+     - .:/app
+    tty: true # Разрешаем интерактивный режим
+    stdin_open: true # Открываем стандартный ввод
+    command: >
+      sh -c "composer install && tail -f /dev/null"
