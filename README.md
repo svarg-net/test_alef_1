@@ -13,3 +13,10 @@
 -8
 
 и т.д.
+
+
+#Реализация
+docker-compose up 
+установка php и зависимостей через compose psr-4 и PHPUnit
+docker-compose exec php sh
+vendor/bin/phpunit src/tests
